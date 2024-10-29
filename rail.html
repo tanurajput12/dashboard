@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Ticket Booking Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Railway Ticket Booking Dashboard</h1>
+        </header>
+        <nav class="categories">
+            <button onclick="showCategory('sleeper')">Sleeper</button>
+            <button onclick="showCategory('ac')">AC</button>
+            <button onclick="showCategory('first-class')">First Class</button>
+        </nav>
+        <div class="booking-form">
+            <h2 id="category-title">Select a Category</h2>
+            <form id="ticket-form">
+                <label for="from">From:</label>
+                <input type="text" id="from" required>
+
+                <label for="to">To:</label>
+                <input type="text" id="to" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+
+                <button type="submit">Book Ticket</button>
+            </form>
+            <div id="message"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
